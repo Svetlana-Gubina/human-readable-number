@@ -13,6 +13,10 @@ module.exports = function toReadable(number) {
         '', 'hundred', 'thousand', 'million',
     ];
 
+    if (!Number.isInteger()) {
+        throw new TypeError('The argument must be an integer');
+    }
+
     if (number < 0) {
         return 'Please enter positive number';
     }
