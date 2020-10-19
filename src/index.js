@@ -13,7 +13,7 @@ module.exports = function toReadable(number) {
         '', 'hundred', 'thousand', 'million',
     ];
 
-    if (!Number.isInteger()) {
+    if (!Number.isInteger(number)) {
         throw new TypeError('The argument must be an integer');
     }
 
